@@ -29,11 +29,11 @@ class SignUpPage extends BasePageMy {
     }
 
     public function getSignUpTermsCheckBox(){
-        return $this->find('//*[@type="checkbox" and @name="register-accept-terms"]');
+        return $this->find('//input[@name="register-accept-terms"]/following-sibling::span');
     }
 
     public function getSignUpSubscribeCheckBox(){
-        return $this->find('.//*[@type="checkbox" and @name="register-subscribe"]');
+        return $this->find('//input[@name="register-subscribe"]/following-sibling::span');
     }
 
     public function getSignUpSubmitButton() {
